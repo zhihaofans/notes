@@ -11,13 +11,13 @@ read ver
 if [ $ver -eq "1" ]
 then
     downUrl="https://github.com/zhihaofans/notes/raw/master/ubuntu/17.04/sources.list"
-elif [ $ver -eq "1" ]
+elif [ $ver -eq "2" ]
 then
     downUrl="https://github.com/zhihaofans/notes/raw/master/ubuntu/16.10/sources.list"
-elif [ $ver -eq "1" ]
+elif [ $ver -eq "3" ]
 then
     downUrl="https://github.com/zhihaofans/notes/raw/master/ubuntu/16.04/sources.list"
-elif [ $ver -eq "1" ]
+elif [ $ver -eq "4" ]
 then
     downUrl="https://github.com/zhihaofans/notes/raw/master/ubuntu/14.04/sources.list"
 else
@@ -26,3 +26,4 @@ else
 
 wget -P /etc/apt/ $downUrl
 echo "Finish"
+exit 0
